@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Rock</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <button onclick="compute('rock');">
+      <img src="src/rock.png" alt="" />
+    </button>
+    <button onclick="compute('paper');">
+      <img src="src/paper.png" alt="" />
+    </button>
+    <button onclick="compute('scissor')">
+      <img src="src/scissor.png" alt="" />
+    </button>
+    <h1 class="js-result"></h1>
+    <p class="js-selection"></p>
+    <p class="js-display-score">You: 0 | Computer: 0 | Ties: 0</p>
+    <button
+      class="reset-button"
+      onclick="score = {user:0, computer:0,ties:0}; 
+    displayScore(userInput=undefined);
+    "
+    >
+      Reset Score
+    </button>
+    <script src="src/brains.js"></script>
+  </body>
+</html>
